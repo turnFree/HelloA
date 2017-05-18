@@ -22,12 +22,12 @@ public class LaLa {
 		if(n > 0){
 			return new BigDecimal(2*func(n - 1).doubleValue());
 		}
-		return new BigDecimal(0);
+		return new BigDecimal(1);
 	}
 	
 	public static void main(String[] args) {
 		LaLa lala = new LaLa();
-		BigDecimal result = lala.func(64);
+		BigDecimal result = lala.func(10);
 		System.out.println(result.doubleValue());
 	}
 }
